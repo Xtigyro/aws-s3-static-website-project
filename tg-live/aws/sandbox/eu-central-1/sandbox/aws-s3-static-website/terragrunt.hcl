@@ -1,5 +1,5 @@
 terraform {
-  source = "git::ssh://git@github.com/scottcressi/terraform-modules.git//modules/networking"
+  source = "../../../../../../tf-mods/aws-s3-static-website/"
 }
 
 include {
