@@ -62,7 +62,7 @@ module "s3-static-website" {
 }
 
 resource "aws_s3_bucket_object" "static_content" {
-  for_each = fileset("${var.static_content_dir}/", "*")
+  for_each = fileset("${var.static_content_dir}/", "**/*")
 
   bucket = local.domain_name
   key    = each.value
