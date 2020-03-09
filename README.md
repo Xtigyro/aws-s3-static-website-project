@@ -8,6 +8,7 @@ Provisioning the following:
 - CloudFront Distribution fronting the S3 Bucket
 - Route 53 Public Hosted Zone
 - Route 53 Record Set aliased to the CloudFront Distribution
+- AWS ACM TLS Certificate
 
 ## Modules' Documentation
 
