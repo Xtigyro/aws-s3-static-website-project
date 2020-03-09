@@ -19,7 +19,7 @@ locals {
 }
 
 module "s3-static-website" {
-  source  = "git::https://github.com/Xtigyro/terraform-aws-s3-static-website.git?ref=master"
+  source  = "git::https://github.com/Xtigyro/terraform-aws-s3-static-website.git?ref=v0.0.4"
 
   domain_name       = local.domain_name
   redirects         = [var.redirects]
