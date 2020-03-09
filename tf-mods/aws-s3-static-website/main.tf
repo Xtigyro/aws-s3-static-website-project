@@ -10,7 +10,7 @@ module "s3-static-website" {
   source  = "git::https://github.com/Xtigyro/terraform-aws-s3-static-website.git?ref=master"
 
   domain_name       = local.domain_name
-  redirects         = var.redirects
+  redirects         = [var.redirects]
   secret            = var.cdn_s3_secret
   cert_arn          = module.acm.this_acm_certificate_arn
   use_route53_zone  = true
@@ -40,7 +40,7 @@ module "acm" {
   domain_name = local.domain_name
   zone_id     = coalescelist(data.aws_route53_zone.this.*.zone_id, aws_route53_zone.this.*.zone_id)[0]
 
-  subject_alternative_names = var.subject_alternative_names
+  subject_alternative_names = [var.subject_alternative_names]
 
   wait_for_validation = false
 
