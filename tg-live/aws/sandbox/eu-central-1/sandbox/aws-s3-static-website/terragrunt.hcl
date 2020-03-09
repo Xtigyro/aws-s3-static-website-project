@@ -8,12 +8,12 @@ include {
 
 inputs = {
   region    = "eu-central-1"
-  domain    = "my-openpayd-domain.com"
+  domain    = "my-xtigyro-domain.com"
   redirects = [
-    "www.my-openpayd-domain.com"
+    "www.my-xtigyro-domain.com"
   ]
   subject_alternative_names = [
-    "*.my-openpayd-domain.com",
-    "app.sub.my-openpayd-domain.com"
+    "*.my-xtigyro-domain.com",
+    "app.sub.my-xtigyro-domain.com"
   ]
 }
