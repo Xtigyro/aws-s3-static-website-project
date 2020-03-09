@@ -22,7 +22,7 @@ Provisioning the following:
 Terraform v0.12.23
 
 # terragrunt -v   # https://terragrunt.gruntwork.io/
-terragrunt version v0.23.0
+terragrunt version v0.23.1
 ```
 
 ## Infra Creation and Content Upload
