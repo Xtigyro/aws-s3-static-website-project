@@ -1,3 +1,15 @@
+provider "aws" {
+  region = var.region
+}
+
+terraform {
+  required_version = "~> 0.12"
+
+  required_providers {
+    aws       = "~> 2.52"
+  }
+}
+
 locals {
   # Use existing (via data source) or create new zone (will fail validation, if zone is not reachable)
   use_existing_route53_zone = false

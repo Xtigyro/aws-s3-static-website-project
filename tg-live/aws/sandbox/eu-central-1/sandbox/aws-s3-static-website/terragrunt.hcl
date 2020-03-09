@@ -1,5 +1,5 @@
 terraform {
-  source = "../../../../../../tf-mods//aws-s3-static-website/"
+  source = "../../../../../..//tf-mods/aws-s3-static-website/"
 }
 
 include {
@@ -11,7 +11,7 @@ inputs = {
   domain    = "my-openpayd-domain.com"
   redirects = [
     "www.my-openpayd-domain.com"
-    ]
+  ]
   subject_alternative_names = [
     "*.my-openpayd-domain.com",
     "app.sub.my-openpayd-domain.com"
