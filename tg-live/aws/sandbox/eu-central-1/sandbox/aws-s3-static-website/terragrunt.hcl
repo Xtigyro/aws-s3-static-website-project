@@ -1,5 +1,5 @@
 terraform {
-  source = "../../../../../../tf-mods/aws-s3-static-website/"
+  source = "../../../../../../tf-mods//aws-s3-static-website/"
 }
 
 include {
