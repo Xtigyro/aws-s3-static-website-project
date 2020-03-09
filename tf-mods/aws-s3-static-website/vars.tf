@@ -8,6 +8,11 @@ variable "cdn_s3_secret" {
   type        = string
 }
 
+variable "static_content_dir" {
+  description = "A directory which holds the static website content"
+  type        = string
+}
+
 variable "domain" {
   description = "Domain name for the website (i.e. www.example.com)"
   type        = string
